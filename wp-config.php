@@ -41,7 +41,7 @@ if (isset($_SERVER['PLATFORM']) && $_SERVER['PLATFORM'] == 'PAGODABOX') {
     define ('DB_HOST', $_SERVER['DB1_HOST'] . ':' . $_SERVER['DB1_PORT']);
 }
 else {
-    define('DB_NAME', 'gaiq');
+    define('DB_NAME', 'wp-dm');
     define('DB_USER', 'root');
     define('DB_PASSWORD', '');
     define('DB_HOST', 'localhost');
@@ -56,14 +56,14 @@ else {
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'Xumc:GY7(/:A@L[BT$z&{U]q_[~HV`oq%fr/[%da$TND=Xg<p W/,,U).j35:J|1');
-define('SECURE_AUTH_KEY',  'J1YMUJw|9enrVda!q[J>K]mllkGg-hzX~,sYe2{>shXjFzo{t]]1IXL%shR-:& w');
-define('LOGGED_IN_KEY',    ':%*%vt(t7UuW@+?HSt#rS~AyU 9<59G,yG,;j7@,$}^Gl:LLoH,I<1=#rz_6[}YC');
-define('NONCE_KEY',        'rzz8VkRP2|{Oj}5~O8y<<k!*G[{|R%glyy0@>9Goj.=dQ{4,B|Mpv)oCG0>nZcYz');
-define('AUTH_SALT',        ']8%S4LK!lFaJ?`GgI#]-JqI`Ks8^O48jVj,n6<ZWU7?2[m]4fM;vDRH)+WRf 2gg');
-define('SECURE_AUTH_SALT', '/]nND9ziyFk m|l3D%kxdKek[zoR1nvnp!:R*|8uix?a9~{q3 #)2IP}>Xi=lo N');
-define('LOGGED_IN_SALT',   '(E;+ @u+1bJ0x!x1V/[*!kW>cK%0/Yl6A(TfO;>nJADiHmB,uyp:rnUBS/go! aJ');
-define('NONCE_SALT',       'Az{dvJ>4@>J ;Iiwtiy>*zg~evjiY2z/l|5YcM$sM@ dIW$-^AAx?vT~3FY]XwbR');
+define('AUTH_KEY',         'I{S.645]b^ l%IOJ[ZL^h_p,[z.!=n$|#e^/.{@efIp;5x`>-,=kZ`E2w|qE;LQZ');
+define('SECURE_AUTH_KEY',  'hjlpBd0q-BwTA=L.v}.ORJWi<a%xw~)SXVkyI7[&?5NR+BGGnOP4t1mTt>{+<EP(');
+define('LOGGED_IN_KEY',    'd2hfl:<3N]E}=ana]U!isCegjrogq x22^WT*:P]/lJr|d$3u<Tr2O3&$UrRcku7');
+define('NONCE_KEY',        'cFl[b/*.lOgZ[ZLqU&?|P?=r2d]OgGl.9J7t&FrX7~BRy2</WJ[P}`PIc7(GP$]y');
+define('AUTH_SALT',        'eI/}mo{D*p]O}E,12x$O >z5{xq&,}.@]m1So^M8YKv*gDKKZvod_tm|u#O=me6;');
+define('SECURE_AUTH_SALT', 'rt62i9ef{{P5dsrjCK=BI(+a;zV)&ViD{4]!h!1nT%-Z61ku7l[^AYIV!b3H8NjN');
+define('LOGGED_IN_SALT',   '01uaO|N3w|KowQ,.Dh8hJq_wZyhgmILGl]Hz.1dT 7C~rc[&,/b)-fE5melIY P:');
+define('NONCE_SALT',       '>{I!K_+DyifD=I1|_Au8HNfPX(/;vvV-XOfM@NJJj@tCNlN+tin<`%D,mu<hf@hk');
 
 /**#@-*/
 
@@ -73,7 +73,7 @@ define('NONCE_SALT',       'Az{dvJ>4@>J ;Iiwtiy>*zg~evjiY2z/l|5YcM$sM@ dIW$-^AAx
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_GAIQ';
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -82,7 +82,7 @@ $table_prefix  = 'wp_GAIQ';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
@@ -92,3 +92,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
