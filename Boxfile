@@ -1,0 +1,27 @@
+global:
+    env:
+        - PLATFORM: PAGODABOX
+        - ENV: PRODUCTION
+
+web1: 
+  name: wordpress-web1
+  php_display_errors: "0"
+  shared_writable_dirs: 
+         - wordpress/wp-content
+         - wp-content/uploads/
+  php_version: 5.4.14
+  php_extensions:
+    - mysql
+    - mysqli
+    - gd
+    - mbstring
+    - exif
+    - iconv
+    - mcrypt
+    - zip
+    - curl
+
+
+db1:
+  name: wordpress-db1
+  type: mysql
